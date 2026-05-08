@@ -5,4 +5,4 @@ def even_odd():
     else:
         print(f"El numero {numero} es impar")
 
-even_odd()
+
