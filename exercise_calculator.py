@@ -1,22 +1,18 @@
 def calculator():
-    num1 = float(input())
-    num2 = float(input())
+    numero1 = float(input())
+    numero2 = float(input())
     operacion = input()
-    
+
     if operacion == "+":
-        resultado = num1 + num2
-        print(f"Resultado: {resultado}")
+        print(f"Resultado: {numero1 + numero2}")
     elif operacion == "-":
-        resultado = num1 - num2
-        print(f"Resultado: {resultado}")
+        print(f"Resultado: {numero1 - numero2}")
     elif operacion == "*":
-        resultado = num1 * num2
-        print(f"Resultado: {resultado}")
+        print(f"Resultado: {numero1 * numero2}")
     elif operacion == "/":
-        if num2 == "0":
+        if numero2 == 0:
             print("Error: division por cero")
         else:
-            resultado = num1 / num2
-            print(f"Resultado: {resultado}")
+            print(f"Resultado: {numero1 / numero2}")
     else:
         print("Operacion invalida")
