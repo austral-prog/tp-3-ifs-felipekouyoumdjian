@@ -1,27 +1,19 @@
 def discount():
-    """
-    Ejercicio 9 (Integrador) - Sistema de Descuentos
+    precio = float(input())
+    cantidad = int(input())
+    subtotal = precio * cantidad
 
-    Crear un sistema de descuentos para una tienda. Leer mediante input():
-    1. El precio unitario de un producto (decimal)
-    2. La cantidad de unidades a comprar (entero)
+    if cantidad >= 10:
+        descuento = 20 
+    elif 5 <= cantidad <= 9:
+        descuento = 10
+    elif cantidad < 5:
+        descuento = 0
+    monto = subtotal * descuento / 100
+    total = subtotal - monto
 
-    Calcular el total aplicando los siguientes descuentos según la cantidad:
-    - Si compra 10 o más unidades: 20% de descuento
-    - Si compra entre 5 y 9 unidades: 10% de descuento
-    - Si compra menos de 5 unidades: sin descuento
+    print(f"Subtotal: {subtotal}")
+    print(f"Descuento aplicado: {descuento}%")
+    print(f"Monto de descuento: {monto}")
+    print(f"Total final: {total}")
 
-    Imprimir:
-    1. El subtotal (precio × cantidad)
-    2. El porcentaje de descuento aplicado
-    3. El monto del descuento
-    4. El total final
-
-    Ejemplo:
-        Para las entradas "100" y "12", la salida esperada es:
-        Subtotal: 1200.0
-        Descuento aplicado: 20%
-        Monto de descuento: 240.0
-        Total final: 960.0
-    """
-    pass
